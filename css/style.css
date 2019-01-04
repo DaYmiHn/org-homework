@@ -1,7 +1,7 @@
-.boxsizingBorder {
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300&subset=cyrillic');
+
+html {
+    font-family: 'Open Sans', sans-serif;
 }
 
 .cont {
@@ -31,21 +31,30 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto;
     border:1px solid #999999;
+
     
 }
 
 .content div {
     border:1px solid #999999;
+    padding: 10px;
+    min-height: 300px;
 }
-.side a {
+ a {
     padding-top: 0px;
-    border: 1px solid black;
+    border: 1px dashed black;
     display: block;
     height: auto;
     min-height: 20px;
     width: auto;
     margin-bottom: 10px;
-
+    text-decoration: none;
+    cursor: move;
+    color: black;
+    padding: 5px;
+    
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+    //border-radius: 5px;
 }
 
 .form {
@@ -67,6 +76,6 @@ textarea {
 }
 
 .tasks {
-    overflow: scroll; /* Добавляем полосы прокрутки */
+    overflow: scroll;
     height: 500px;
 }

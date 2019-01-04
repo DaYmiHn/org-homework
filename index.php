@@ -11,7 +11,7 @@
 		<div class="side">
 			<div class="tasks" id="tasks">
 			<?php 
-				include("script/generate.php")
+				include("script/generate_tasks.php")
 			 ?>
 			</div>
 			<div class="form">
@@ -24,14 +24,15 @@
 			
 		</div>
 		<div class="content">
-			<div class="monday">1</div>
-			<div class="tuesday">2</div>
-			<div class="wednesday">3</div>
-			<div class="thursday">4</div>
-			<div class="friday">5</div>
-			<div class="saturday">6</div>
+			<div id="monday">Понедельник: </div>
+			<div id="tuesday">Вторник: </div>
+			<div id="wednesday">Среда: </div>
+			<div id="thursday">Четверг: </div>
+			<div id="friday">Пятница: </div>
+			<div id="saturday">Суббота: </div>
 		</div>
 	</div>
+	<script src="src/Sortable.js"></script>
 	<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script src="script/script.js"></script>
 </body>
