@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<style>
+	.cont {
+		display: grid;
+	    grid-gap: 5px;
+	    grid-template-columns: repeat(4, 1fr);
+	    grid-template-rows: 500px 500px;
+	    grid-template-areas:
+	        "m c c c"
+	        "m c c c";
+	}
+
+	.side {
+		grid-area: m;
+	}
+
+	.content {
+		grid-area: c;
+		display: grid;
+	    grid-gap: 5px;
+	    grid-template-columns: repeat(3, 1fr);
+	    grid-template-rows: 400px 400px;
+	    
+	}
+
+
+	
+</style>
+	<div class="cont">
+		<div class="side">side</div>
+		<div class="content">
+			<div class="monday">1</div>
+			<div class="tuesday">2</div>
+			<div class="wednesday">3</div>
+			<div class="thursday">4</div>
+			<div class="friday">5</div>
+			<div class="saturday">6</div>
+		</div>
+	</div>
+	
+</body>
+</html>
