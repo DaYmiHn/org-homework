@@ -1,0 +1,23 @@
+.cont {
+	display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "m c c c"
+        "m c c c";
+	}
+
+.side {
+	grid-area: m;
+	min-height: 600px;
+}
+
+.content {
+	grid-area: c;
+	display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    
+}
