@@ -53,6 +53,8 @@
     margin:5px 0;
     padding: 10px;
     padding-right: 10px;
+
+
 }
 
 .side strong {
@@ -64,3 +66,7 @@ textarea {
     //min-width: 275px;
 }
 
+.tasks {
+    overflow: scroll; /* Добавляем полосы прокрутки */
+    height: 500px;
+}
