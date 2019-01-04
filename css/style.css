@@ -1,4 +1,12 @@
+.boxsizingBorder {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
 .cont {
+    border:1px solid #999999;
+    padding: 10px;
 	display: grid;
     grid-gap: 5px;
     grid-template-columns: repeat(4, 1fr);
@@ -9,8 +17,11 @@
 	}
 
 .side {
+    border:1px solid #999999;
 	grid-area: m;
 	min-height: 600px;
+    min-width: 280px;
+    padding: 10px;
 }
 
 .content {
@@ -19,5 +30,37 @@
     grid-gap: 5px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto;
+    border:1px solid #999999;
     
 }
+
+.content div {
+    border:1px solid #999999;
+}
+.side a {
+    padding-top: 0px;
+    border: 1px solid black;
+    display: block;
+    height: auto;
+    min-height: 20px;
+    width: auto;
+    margin-bottom: 10px;
+
+}
+
+.form {
+    border:1px solid #999999;
+    margin:5px 0;
+    padding: 10px;
+    padding-right: 10px;
+}
+
+.side strong {
+    font-size: 18pt;
+}
+
+textarea {
+    width: 98%;
+    //min-width: 275px;
+}
+
