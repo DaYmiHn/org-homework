@@ -11,7 +11,7 @@
 		display: grid;
 	    grid-gap: 5px;
 	    grid-template-columns: repeat(4, 1fr);
-	    grid-template-rows: 500px 500px;
+	    grid-template-rows: auto auto;
 	    grid-template-areas:
 	        "m c c c"
 	        "m c c c";
@@ -19,6 +19,7 @@
 
 	.side {
 		grid-area: m;
+		min-height: 600px;
 	}
 
 	.content {
@@ -26,7 +27,7 @@
 		display: grid;
 	    grid-gap: 5px;
 	    grid-template-columns: repeat(3, 1fr);
-	    grid-template-rows: 400px 400px;
+	    grid-template-rows: auto auto;
 	    
 	}
 
@@ -36,7 +37,7 @@
 	<div class="cont">
 		<div class="side">side</div>
 		<div class="content">
-			<div class="monday">1</div>
+			<div class="monday">1 </div>
 			<div class="tuesday">2</div>
 			<div class="wednesday">3</div>
 			<div class="thursday">4</div>
