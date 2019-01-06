@@ -2,11 +2,12 @@
 include("link.php");
 	    // Переменные с формы
 	$content = $_GET['content'];
+	$id = $_GET['id'];
 
 	$content = $content;
 	$link = mysqli_connect($host, $user, $password, $database);
 
-	$query ="INSERT INTO tuesday (content) VALUES ('".$content."')";
+	$query ="INSERT INTO tuesday (id, content) VALUES ('".$id."','".$content."')";
 
 	$result = mysqli_query($link, $query); 
  ?>

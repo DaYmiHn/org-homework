@@ -5,6 +5,6 @@ $sql = "SELECT id, content FROM monday";
 $result = $connection->query($sql);
   		 
 while($row=$result->fetch()) {
-	echo "<a href='' id='", $row[id], "'>", $row[content], "</a> \n"; 
+	echo $row[content]; 
 	}
  ?>
