@@ -24,12 +24,12 @@
 			
 		</div>
 		<div class="content">
-			<div><p>Понедельник: </p><div id="monday"> <?php include("script/generate_monday.php") ?> </div></div>
-			<div><p>Вторник:</p><div id="tuesday"><?php include("script/generate_tuesday.php") ?></div></div>
-			<div><p>Среда: </p><div id="wednesday"><?php include("script/generate_wednesday.php") ?></div></div>
-			<div><p>Четверг: </p><div id="thursday"><?php include("script/generate_thursday.php") ?></div></div>
-			<div><p>Пятница: </p><div id="friday"><?php include("script/generate_friday.php") ?></div></div>
-			<div><p>Суббота: </p><div id="saturday"><?php include("script/generate_saturday.php") ?></div></div>
+			<div><p>Понедельник: </p><div id="monday"> <div></div><?php include("script/generate_monday.php") ?> </div></div>
+			<div><p>Вторник:</p><div id="tuesday"><div></div><?php include("script/generate_tuesday.php") ?></div></div>
+			<div><p>Среда: </p><div id="wednesday"><div></div><?php include("script/generate_wednesday.php") ?></div></div>
+			<div><p>Четверг: </p><div id="thursday"><div></div><?php include("script/generate_thursday.php") ?></div></div>
+			<div><p>Пятница: </p><div id="friday"><div></div><?php include("script/generate_friday.php") ?></div></div>
+			<div><p>Суббота: </p><div id="saturday"><div></div><?php include("script/generate_saturday.php") ?></div></div>
 		</div>
 	</div>
 	<script src="src/Sortable.js"></script>

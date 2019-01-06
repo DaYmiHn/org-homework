@@ -13,6 +13,7 @@ $('#add').on('click', function() {
     success: function() {
     show();
     header.value = '';
+    // console.log("Очитен");
     content.value = '';
   }
 
@@ -32,7 +33,7 @@ function show() {
 
   xmlhttp.open("GET","script/generate_tasks.php",true); //?eda="+str
   xmlhttp.send();
-  console.log(evt.item);
+  // console.log(evt.item);
   //$("#eda").val(""); 
 
 	};
@@ -89,7 +90,7 @@ function show() {
         group: "words",
         onAdd: function (evt){ $.ajax({ type: "GET", url: "script/add_saturday.php", data:  "content="+evt.item.outerHTML+"&id="+evt.item.id, });}, 
         onUpdate: function (evt){ console.log('onUpdate.saturday:', evt.item); },
-        onRemove: function (evt){ $.ajax({ type: "GET", url: "script/remove_saturday.php", data:"id="+evt.item.id, success: function() {console.log("Удалён");}  });}
+        onRemove: function (evt){ $.ajax({ type: "GET", url: "script/remove_saturday.php", data:"id="+evt.item.id, success: function() {console.log("Удалён:", evt.item.id);}  });}
       });
 
 

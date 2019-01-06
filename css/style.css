@@ -12,14 +12,22 @@ div{
     border-radius: 7px;
 }
 
-body>.cont>div{
+
+.content>div{
     background: rgba(256,256,256, 0.8);
-    //height: 100vh;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
 }
 
+
+.cont>.side{
+    background: rgba(256,256,256, 0.8);
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+}
+
+
 .cont {
-    min-width: 700px;
-    border:1px solid #999999;
+    //min-width: 700px;
+    /*border:1px solid #999999;*/
     padding: 10px;
 	display: grid;
     grid-gap: 5px;
@@ -47,7 +55,7 @@ body>.cont>div{
     border:1px solid #999999;
 	grid-area: m;
 	min-height: 600px;
-    min-width: 280px;
+    //min-width: 280px;
     padding: 10px;
 }
 
@@ -113,11 +121,43 @@ body>.cont>div{
     font-size: 18pt;
 }
 
+#header {
+
+}
+
 textarea {
     //width: 98%;
     //min-width: 275px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
     width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
 }
+
+#add {
+    width: 100%;
+    height: 30px;
+    color: white;
+    background-color: #f44336;
+    outline:none;
+    border: 0;
+    text-align: center;
+    line-height: 20px;
+    font: normal 30px;
+    -moz-transition:  box-shadow 0.2s ease-out;
+    -o-transition:  box-shadow 0.2s ease-out;
+    -webkit-transition:  box-shadow 0.2s ease-out;
+}
+#add:hover {
+    box-shadow: 3px 3px 3px rgba(0,0,0,1);
+    -moz-transition:  box-shadow 0.2s ease-out;
+    -o-transition:  box-shadow 0.2s ease-out;
+    -webkit-transition:  box-shadow 0.2s ease-out;
+}
+
+
+
+
 
 .tasks {
     border:1px solid #999999;
