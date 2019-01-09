@@ -22,6 +22,13 @@
 			    <p><button type="button"  id="add">Добавить</button></p>
 			</div>
 			
+			
+			<div class="delete" id="delete_task">
+<div class="delete_center">
+					На удаление
+				</div> 
+				
+			</div>
 		</div>
 		<div class="content">
 			<div><p>Понедельник: </p><div id="monday"> <div></div><?php include("script/generate_monday.php") ?> </div></div>
